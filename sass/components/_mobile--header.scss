@@ -1,0 +1,112 @@
+@media screen and (min-width: 150px) and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+  .link__current::after {
+    display: none;
+  }
+  .hat {
+    max-width: 480px;
+    height: 60px;
+    padding: 16px 100px 16px 15px;
+  }
+  .menu-toggle {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    border: none;
+    background-color: #ffffff;
+    &:hover > svg,
+    &:focus > svg {
+      fill: $accent-color;
+    }
+  }
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 48px 83px 48px 40px;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #ffffff;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    overflow-y: scroll;
+
+    & > .menu-toggle {
+      position: absolute;
+      top: 21px;
+      right: 25px;
+    }
+  }
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  .browsing__list {
+    display: flex;
+    flex-direction: column;
+    & > .browsing__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    .browsing__link {
+      padding: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
+  }
+  .hat__list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 302px;
+    & > li:not(:first-child) {
+      margin-bottom: 32px;
+    }
+  }
+  .hat__link {
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    & > svg {
+      display: none;
+    }
+  }
+  .hat__link--post {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .menu__container--list {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .menu__container--link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $text-color;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  .menu__container--span {
+    color: rgba(33, 33, 33, 0.2);
+  }
+}
