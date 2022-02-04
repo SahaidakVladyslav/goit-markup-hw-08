@@ -1,0 +1,131 @@
+.about-svg-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 30px;
+}
+.about-svg-link {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.about-list {
+  display: flex;
+}
+.about-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+.about-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
+  width: 270px;
+}
+.about-link:not(:last-child) {
+  margin-right: 30px;
+}
+.about-computer {
+  padding-bottom: 94px;
+}
+.title-main {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.text-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.text-profession {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #757575;
+  margin-bottom: 16px;
+}
+.list-icon {
+  list-style: none;
+  display: flex;
+  margin-left: 32px;
+  margin-bottom: 30px;
+}
+.link-icon {
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.icon-reference {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-team {
+  fill: $svg-color;
+}
+.icon-reference:focus,
+.icon-reference:hover {
+  background-color: $accent-color;
+}
+.icon-reference:focus .icon-team,
+.icon-reference:hover .icon-team {
+  fill: #fff;
+}
+.our-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers-list {
+  list-style: none;
+  display: flex;
+}
+.cutomers-web {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cutomers-web:hover,
+.cutomers-web:focus {
+  border-color: $accent-color;
+}
+.customers-svg {
+  fill: $svg-color;
+}
+.cutomers-web:hover .customers-svg,
+.cutomers-web:focus .customers-svg {
+  fill: $accent-color;
+}
+.cutomers-link:not(:last-child) {
+  margin-right: 30px;
+}
