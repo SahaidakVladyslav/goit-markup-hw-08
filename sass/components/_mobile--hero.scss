@@ -1,15 +1,9 @@
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .hero {
-    max-width: 480px;
-    max-height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-color: #2f303a66;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/Header__mobile--img.320.jpg);
-    background-size: 320px 240px;
+    background-size: cover;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -27,6 +21,14 @@
       background-size: cover;
     }
   }
+  .hero {
+    max-width: 480px;
+    max-height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
   .hero__container {
     display: block;
   }
@@ -39,5 +41,22 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+  .backdrop {
+    width: 100vw;
+    height: 100vh;
+  }
+  .modal {
+    max-width: 450px;
+    max-height: 609px;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .backdrop__input {
+    width: 370px;
+  }
+  textarea {
+    width: 370px;
   }
 }
