@@ -1,54 +1,58 @@
-.about-svg-list {
-  list-style: none;
-  display: flex;
-  margin-bottom: 30px;
-}
-.about-svg-link {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
+// .about__list--svg {
+//   list-style: none;
+//   display: flex;
+//   margin-bottom: 30px;
+// }
+// .about__item--svg {
+//   width: 270px;
+//   height: 120px;
+//   background-color: #f5f4fa;
+//   border-radius: 4px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.about-list {
-  display: flex;
-}
-.about-title {
+// .about__list {
+//   display: flex;
+// }
+.about__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
 }
-.about-text {
+.about__label {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: #757575;
   width: 270px;
 }
-.about-link:not(:last-child) {
-  margin-right: 30px;
-}
-.about-computer {
+// .about__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+.probide {
   padding-bottom: 94px;
 }
-.title-main {
+.provide__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
 }
-.text-team {
+.provide__list {
+  display: flex;
+}
+.team__label {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -64,13 +68,13 @@
   color: #757575;
   margin-bottom: 16px;
 }
-.list-icon {
+.team__list--icon {
   list-style: none;
   display: flex;
   margin-left: 32px;
   margin-bottom: 30px;
 }
-.link-icon {
+.team__item--icon {
   background-color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -78,7 +82,7 @@
     margin-right: 10px;
   }
 }
-.icon-reference {
+.link--icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -89,12 +93,12 @@
 .icon-team {
   fill: $svg-color;
 }
-.icon-reference:focus,
-.icon-reference:hover {
+.link--icon:focus,
+.link--icon:hover {
   background-color: $accent-color;
 }
-.icon-reference:focus .icon-team,
-.icon-reference:hover .icon-team {
+.link--icon:focus .icon-team,
+.link--icon:hover .icon-team {
   fill: #fff;
 }
 .our-customers {

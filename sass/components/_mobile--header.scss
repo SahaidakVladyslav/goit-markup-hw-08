@@ -8,7 +8,7 @@
   .hat {
     max-width: 480px;
     height: 60px;
-    padding: 16px 100px 16px 15px;
+    padding: 16px 23px 16px 15px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -33,7 +33,7 @@
 
     background-color: #ffffff;
     z-index: 999;
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: transform 250ms ease-in-out;
 
     overflow-y: scroll;

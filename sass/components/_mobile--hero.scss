@@ -47,16 +47,16 @@
     height: 100vh;
   }
   .modal {
-    max-width: 450px;
-    max-height: 609px;
+    width: 80vw;
+    height: 80vh;
     padding: 40px;
     margin-right: auto;
     margin-left: auto;
   }
   .backdrop__input {
-    width: 370px;
+    width: 60vw;
   }
   textarea {
-    width: 370px;
+    width: 60vw;
   }
 }
