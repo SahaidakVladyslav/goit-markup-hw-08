@@ -2,14 +2,14 @@
   .hero {
     background-color: #2f303a66;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/Header__mobile--img.320.jpg);
+      url(../images/mobile--img/Header__mobile--img.320.jpg);
     background-size: cover;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/Header__mobile--img.640.jpg);
+      background-image: url(../images/mobile--img/Header__mobile--img.640.jpg);
       background-size: cover;
     }
   }
@@ -17,7 +17,7 @@
     screen and (min-resolution: 3dppx),
     screen and (min-resolution: 288dpi) {
     .hero {
-      background-image: url(../images/Header__mobile--img.960.jpg);
+      background-image: url(../images/mobile--img/Header__mobile--img.960.jpg);
       background-size: cover;
     }
   }
@@ -47,16 +47,16 @@
     height: 100vh;
   }
   .modal {
-    width: 80vw;
-    height: 80vh;
+    width: 94vw;
+    height: 609px;
     padding: 40px;
     margin-right: auto;
     margin-left: auto;
   }
   .backdrop__input {
-    width: 60vw;
+    width: 77vw;
   }
   textarea {
-    width: 60vw;
+    width: 77vw;
   }
 }

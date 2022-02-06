@@ -1,0 +1,29 @@
+@media screen and (min-width: 150px) and (max-width: 767px) {
+  .customers {
+    padding: 60px 15px;
+  }
+
+  .customers__title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1, 18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }
+  .customers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cutomers__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .cutomers__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .cutomers__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}

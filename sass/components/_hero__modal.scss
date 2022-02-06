@@ -62,8 +62,9 @@
   padding-right: 39px;
   padding-bottom: 40px;
   padding-left: 41px;
+  overflow-y: scroll;
 }
-.close-button {
+.modal__btn--close {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -76,19 +77,20 @@
   cursor: pointer;
   background-color: #ffffff;
 }
-.close-modal-svg {
+.btn__close--svg {
   background-repeat: no-repeat;
   background-size: cover;
   fill: #000;
 }
-.close-button:hover .close-modal-svg {
+.modal__btn--close:hover .btn__close--svg {
   fill: $accent-color;
 }
-.title-modal {
+.modal--title {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 12px;
   color: #212121;
 }
@@ -102,21 +104,21 @@
   outline: none;
   font-size: 14px;
 }
-.name-container,
-.tel-container,
-.email-container {
+.modal__container--name,
+.modal__container--tel,
+.modal__container--email {
   position: relative;
 }
-.name-container > label,
-.tel-container > label,
-.email-container > label,
-.comment-container > label {
+.modal__container--name > label,
+.modal__container--tel > label,
+.modal__container--email > label,
+.modal__container--comment > label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
 }
-.svg-input {
+.input--svg {
   position: absolute;
   left: 15px;
   bottom: 11px;
@@ -132,8 +134,8 @@ input:hover,
 input:focus {
   border-color: $accent-color;
 }
-input:hover ~ .svg-input,
-input:focus ~ .svg-input {
+input:hover ~ .input--svg,
+input:focus ~ .input--svg {
   fill: $accent-color;
 }
 .input label {
@@ -160,9 +162,8 @@ textarea {
     border-color: $accent-color;
   }
 }
-.signature-container {
+.modal__container--signature {
   margin-top: 20px;
-  margin-bottom: 30px;
   margin-right: 7px;
   margin-left: 13px;
 }
@@ -218,7 +219,7 @@ textarea {
   border-color: $accent-color;
   background-clip: border-box;
 }
-.link-signature {
+.signature--link {
   color: $accent-color;
 }
 .btn-form {
@@ -227,6 +228,7 @@ textarea {
   padding: 10px 55px 10px 56px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 4%;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;

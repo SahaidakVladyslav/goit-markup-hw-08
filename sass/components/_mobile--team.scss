@@ -1,13 +1,24 @@
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 15px;
   }
-  .team-content {
-    background-color: #f5f4fa;
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .team__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+    padding-bottom: 24px;
   }
+
   .team__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .team__img {
+    width: 100%;
+  }
+  .team__list--icon {
+    margin-left: 122px;
+    margin-bottom: 0px;
   }
 }

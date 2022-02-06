@@ -6,12 +6,12 @@
   color: #2196f3;
 }
 
-.cellar-link:hover,
-.cellar-link:focus {
+.cellar__link:hover,
+.cellar__link:focus {
   color: $accent-color;
 }
 
-.cellar-link:active {
+.cellar__link:active {
   color: $text-color;
 }
 .primary-button {
@@ -82,7 +82,7 @@
     margin-right: 30px;
   }
 }
-.cellar-link {
+.cellar__link {
   display: flex;
   flex-direction: column;
 }
