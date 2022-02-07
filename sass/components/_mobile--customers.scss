@@ -17,13 +17,13 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .cutomers__item:not(:last-child) {
+  .customers__item:not(:last-child) {
     margin-right: 0;
   }
-  .cutomers__item:nth-child(2n + 1) {
+  .customers__item:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .cutomers__item:nth-child(-n + 4) {
+  .customers__item:nth-child(-n + 4) {
     margin-bottom: 30px;
   }
 }
