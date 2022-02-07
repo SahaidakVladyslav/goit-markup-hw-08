@@ -95,6 +95,12 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
+    @media screen and (min-width: 150px) and (max-width: 446px) {
+      flex-direction: column;
+      & > li {
+        margin-bottom: 10px;
+      }
+    }
   }
   .menu__container--link {
     font-style: normal;
