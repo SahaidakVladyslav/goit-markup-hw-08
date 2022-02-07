@@ -382,6 +382,7 @@ body {
   padding-right: 39px;
   padding-bottom: 40px;
   padding-left: 41px;
+  overflow-y: scroll;
 }
 
 .modal__btn--close {
@@ -1170,28 +1171,24 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 150px) and (max-width: 767px) {
-  .container {
-    max-width: 480px;
-  }
   .link__current::after {
     display: none;
   }
   .hat {
-    max-width: 480px;
     height: 60px;
     padding: 16px 23px 16px 15px;
     margin-left: auto;
     margin-right: auto;
   }
-  .menu-toggle {
+  .menu__btn--open {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     border: none;
     background-color: #ffffff;
   }
-  .menu-toggle:hover > svg,
-  .menu-toggle:focus > svg {
+  .menu__btn--open:hover > svg,
+  .menu__btn--open:focus > svg {
     fill: #2196f3;
   }
   .menu-container {
@@ -1202,7 +1199,6 @@ textarea:hover, textarea:focus {
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
-    z-index: 999;
     -webkit-transform: translateX(150%);
             transform: translateX(150%);
     -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -1211,10 +1207,12 @@ textarea:hover, textarea:focus {
     transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
     overflow-y: scroll;
   }
-  .menu-container > .menu-toggle {
+  .menu-container > .menu__btn--close {
     position: absolute;
     top: 21px;
     right: 25px;
+    border: none;
+    background-color: #ffffff;
   }
   .menu-container.is-open {
     -webkit-transform: translateX(0);
@@ -1396,10 +1394,11 @@ textarea:hover, textarea:focus {
 
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .about {
+    width: 100vw;
     padding: 60px 15px;
   }
   .about__svg--container {
-    padding: 25px 192px;
+    padding: 20% 45%;
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-top: 30px;
@@ -1439,12 +1438,18 @@ textarea:hover, textarea:focus {
     width: 100%;
   }
   .team__list--icon {
-    margin-left: 122px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: centerer;
+        -ms-flex-pack: centerer;
+            justify-content: centerer;
+    margin-left: 25%;
     margin-bottom: 0px;
   }
 }
 
-@media screen and (min-width: 150px) and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
   .customers {
     padding: 60px 15px;
   }
@@ -1474,6 +1479,37 @@ textarea:hover, textarea:focus {
     margin-right: 30px;
   }
   .customers__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 395px) {
+  .customers__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .customers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customers__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .customers__item:nth-child(2n + 1) {
+    margin-right: 0;
+  }
+  .customers__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+  .customers__item {
     margin-bottom: 30px;
   }
 }

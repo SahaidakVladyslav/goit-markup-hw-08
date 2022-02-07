@@ -1,9 +1,10 @@
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .about {
+    width: 100vw;
     padding: 60px 15px;
   }
   .about__svg--container {
-    padding: 25px 192px;
+    padding: 20% 45%;
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-top: 30px;

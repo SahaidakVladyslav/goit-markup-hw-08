@@ -18,7 +18,10 @@
     width: 100%;
   }
   .team__list--icon {
-    margin-left: 122px;
+    display: flex;
+    justify-content: centerer;
+    margin-left: 25%;
+
     margin-bottom: 0px;
   }
 }
