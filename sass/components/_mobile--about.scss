@@ -1,7 +1,9 @@
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .about {
-    width: 100vw;
+    max-width: 480px;
     padding: 60px 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .about__svg--container {
     padding: 10% 45%;
@@ -17,9 +19,14 @@
   }
   .about__label {
     display: flex;
-    width: 92vw;
+    width: 450px;
   }
   .provide {
     display: none;
+  }
+}
+@media screen and (min-width: 150px) and (max-width: 450px) {
+  .about__label {
+    width: 340px;
   }
 }

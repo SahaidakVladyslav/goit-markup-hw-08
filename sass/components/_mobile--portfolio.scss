@@ -1,6 +1,9 @@
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .portfolio__container {
     padding: 60px 15px;
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .portfolio__list--button {
     justify-content: flex-start;
@@ -23,5 +26,14 @@
   }
   .portfolio--img {
     width: 450px;
+  }
+}
+@media screen and (min-width: 150px) and (max-width: 450px) {
+  .portfolio--img {
+    width: 350px;
+    height: auto;
+  }
+  .portfolio__item--button:nth-child(3) {
+    margin-right: 15px;
   }
 }

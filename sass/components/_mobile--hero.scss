@@ -35,7 +35,7 @@
   }
 
   .hero {
-    max-width: 100vw;
+    max-width: 480px;
     max-height: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -44,7 +44,10 @@
   }
   .hero__container {
     display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
+
   .hero--title {
     margin-bottom: 30px;
     width: 360px;

@@ -345,10 +345,6 @@ body {
   background-color: #188ce8;
 }
 
-.hero__container {
-  width: 100vw;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -382,7 +378,6 @@ body {
   padding-right: 39px;
   padding-bottom: 40px;
   padding-left: 41px;
-  overflow-y: scroll;
 }
 
 .modal__btn--close {
@@ -496,7 +491,25 @@ textarea {
   padding-left: 16px;
   padding-bottom: 12px;
   padding-right: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   outline: none;
+}
+
+textarea::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+textarea:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+textarea::-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 textarea:hover, textarea:focus {
@@ -608,9 +621,11 @@ textarea:hover, textarea:focus {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .about__svg--container {
+  display: block;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -679,7 +694,12 @@ textarea:hover, textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 32px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
 }
 
@@ -877,15 +897,11 @@ textarea:hover, textarea:focus {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-}
-
-.telegram__email--link {
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-decoration: none;
 }
 
 .telegram__email--icon {
@@ -970,6 +986,7 @@ textarea:hover, textarea:focus {
 }
 
 .portfolio__container {
+  max-width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
   padding-right: 12px;
@@ -1033,7 +1050,7 @@ textarea:hover, textarea:focus {
 
 .portfolio__container--transform {
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 294px;
   padding-top: 63px;
   padding-right: 24px;
@@ -1175,10 +1192,15 @@ textarea:hover, textarea:focus {
     display: none;
   }
   .hat {
+    max-width: 480px;
     height: 60px;
-    padding: 16px 23px 16px 15px;
+    padding: 16px 15px 16px 15px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .hat__container {
+    margin-right: auto;
+    margin-left: auto;
   }
   .menu__btn--open {
     margin-top: auto;
@@ -1192,11 +1214,14 @@ textarea:hover, textarea:focus {
     fill: #2196f3;
   }
   .menu-container {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
+    margin-right: auto;
+    margin-left: auto;
     padding: 48px 83px 48px 40px;
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     background-color: #ffffff;
     -webkit-transform: translateX(150%);
@@ -1252,13 +1277,13 @@ textarea:hover, textarea:focus {
     margin-bottom: 32px;
   }
   .hat__link {
+    width: 470px;
     padding: 0;
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    color: #2196f3;
   }
   .hat__link > svg {
     display: none;
@@ -1269,9 +1294,9 @@ textarea:hover, textarea:focus {
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: #757575;
   }
   .menu__container--list {
+    width: 357px;
     margin-top: 64px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1283,7 +1308,7 @@ textarea:hover, textarea:focus {
   }
 }
 
-@media screen and (min-width: 150px) and (max-width: 767px) and (min-width: 150px) and (max-width: 446px) {
+@media screen and (min-width: 150px) and (max-width: 767px) and (min-width: 200px) and (max-width: 380px) {
   .menu__container--list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1310,9 +1335,6 @@ textarea:hover, textarea:focus {
   }
   .menu__container--span {
     color: rgba(33, 33, 33, 0.2);
-  }
-  .hero__container {
-    width: 100vw;
   }
 }
 
@@ -1353,7 +1375,7 @@ textarea:hover, textarea:focus {
 
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .hero {
-    max-width: 100vw;
+    max-width: 480px;
     max-height: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -1362,6 +1384,8 @@ textarea:hover, textarea:focus {
   }
   .hero__container {
     display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
   .hero--title {
     margin-bottom: 30px;
@@ -1394,8 +1418,10 @@ textarea:hover, textarea:focus {
 
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .about {
-    width: 100vw;
+    max-width: 480px;
     padding: 60px 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .about__svg--container {
     padding: 10% 45%;
@@ -1412,10 +1438,16 @@ textarea:hover, textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 92vw;
+    width: 450px;
   }
   .provide {
     display: none;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 450px) {
+  .about__label {
+    width: 340px;
   }
 }
 
@@ -1423,7 +1455,13 @@ textarea:hover, textarea:focus {
   .team {
     padding: 60px 15px;
   }
+  .team__container {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .team__item {
+    max-width: 450px;
     padding-bottom: 24px;
   }
   .team__item:not(:last-child) {
@@ -1438,13 +1476,6 @@ textarea:hover, textarea:focus {
     width: 100%;
   }
   .team__list--icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: centerer;
-        -ms-flex-pack: centerer;
-            justify-content: centerer;
-    margin-left: 25%;
     margin-bottom: 0px;
   }
 }
@@ -1452,6 +1483,9 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 400px) and (max-width: 767px) {
   .customers {
     padding: 60px 15px;
+  }
+  .customers__container {
+    max-width: 480px;
   }
   .customers__title {
     margin-bottom: 30px;
@@ -1602,6 +1636,9 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .portfolio__container {
     padding: 60px 15px;
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .portfolio__list--button {
     -webkit-box-pack: start;
@@ -1627,6 +1664,16 @@ textarea:hover, textarea:focus {
   }
   .portfolio--img {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 450px) {
+  .portfolio--img {
+    width: 350px;
+    height: auto;
+  }
+  .portfolio__item--button:nth-child(3) {
+    margin-right: 15px;
   }
 }
 
@@ -1735,7 +1782,7 @@ textarea:hover, textarea:focus {
 
 @media screen and (min-width: 768px) and (max-width: 1430px) {
   .about__container {
-    padding: 60px 15px;
+    max-width: 768px;
   }
   .about__list {
     display: -webkit-box;
@@ -1764,6 +1811,9 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 768px) and (max-width: 1430px) {
   .team {
     padding: 60px 15px;
+  }
+  .team__container {
+    max-width: 768px;
   }
   .team__list {
     display: -webkit-box;
@@ -1794,11 +1844,20 @@ textarea:hover, textarea:focus {
   .team__item:nth-child(1n + 3) {
     margin-top: 30px;
   }
+  .team__title {
+    margin-bottom: 30px;
+  }
+  img {
+    width: 354px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1430px) {
   .customers {
+    max-width: 768px;
     padding: 60px 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .customers__title {
     text-align: center;
@@ -1831,6 +1890,7 @@ textarea:hover, textarea:focus {
 
 @media screen and (min-width: 768px) and (max-width: 1430px) {
   .cellar__container {
+    max-width: 768px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1868,6 +1928,23 @@ textarea:hover, textarea:focus {
   .telegram__email--btn {
     margin-left: 0;
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1430px) {
+  .portfolio__container {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .portfolio__item--content:nth-child(even) {
+    margin-right: 0px;
+  }
+  .portfolio__item--content:nth-child(3) {
+    margin-right: 30px;
+  }
+  .portfolio__item--content:last-child {
+    margin-top: 30px;
   }
 }
 
@@ -1946,6 +2023,9 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 1430px) {
+  .hero {
+    max-width: 1600px;
+  }
   .hero--title {
     width: 696px;
   }

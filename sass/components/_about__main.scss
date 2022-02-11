@@ -16,6 +16,7 @@
 //   }
 // }
 .about__svg--container {
+  display: block;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -78,7 +79,11 @@
 .team__list--icon {
   list-style: none;
   display: flex;
-  margin-left: 32px;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+
   margin-bottom: 30px;
 }
 .team__item--icon {
