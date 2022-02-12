@@ -322,13 +322,7 @@ body {
 }
 
 .hero__button {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  display: block;
-  text-align: center;
-  background-color: #2196f3;
-  color: #ffffff;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
@@ -336,7 +330,15 @@ body {
   padding-bottom: 10px;
   padding-right: 30px;
   border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  background-color: #2196f3;
+  color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 .hero__button:focus {
@@ -518,8 +520,6 @@ textarea:hover, textarea:focus {
 
 .modal__container--signature {
   margin-top: 20px;
-  margin-right: 7px;
-  margin-left: 13px;
 }
 
 .hide-me {
@@ -1057,6 +1057,7 @@ textarea:hover, textarea:focus {
   padding-bottom: 63px;
   padding-left: 24px;
   background-color: rgba(33, 150, 243, 0.9);
+  cursor: pointer;
   -webkit-transform: translateY(1%);
           transform: translateY(1%);
   -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1301,14 +1302,11 @@ textarea:hover, textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     list-style: none;
   }
 }
 
-@media screen and (min-width: 150px) and (max-width: 767px) and (min-width: 200px) and (max-width: 380px) {
+@media screen and (min-width: 150px) and (max-width: 767px) and (min-width: 200px) and (max-width: 370px) {
   .menu__container--list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1402,17 +1400,48 @@ textarea:hover, textarea:focus {
     height: 100vh;
   }
   .modal {
-    width: 94vw;
+    max-width: 450px;
     height: 609px;
     padding: 40px;
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px) and (min-width: 150px) and (max-width: 480px) {
+  .modal {
+    width: 93vw;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px) {
+  .backdrop__input {
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px) and (min-width: 150px) and (max-width: 480px) {
   .backdrop__input {
     width: 77vw;
   }
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px) {
+  textarea {
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px) and (min-width: 150px) and (max-width: 480px) {
   textarea {
     width: 77vw;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 1429px) {
+  .i-accept {
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 
@@ -1480,7 +1509,7 @@ textarea:hover, textarea:focus {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 767px) {
+@media screen and (min-width: 399px) and (max-width: 767px) {
   .customers {
     padding: 60px 15px;
   }
@@ -1517,7 +1546,7 @@ textarea:hover, textarea:focus {
   }
 }
 
-@media screen and (min-width: 350px) and (max-width: 395px) {
+@media screen and (min-width: 350px) and (max-width: 399px) {
   .customers__title {
     text-align: center;
     margin-bottom: 30px;

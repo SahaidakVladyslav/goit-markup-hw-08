@@ -96,10 +96,9 @@
     width: 357px;
     margin-top: 64px;
     display: flex;
-    justify-content: space-between;
     list-style: none;
 
-    @media screen and (min-width: 200px) and (max-width: 380px) {
+    @media screen and (min-width: 200px) and (max-width: 370px) {
       flex-direction: column;
 
       & > li {

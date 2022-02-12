@@ -10,13 +10,7 @@
   letter-spacing: 0.06em;
 }
 .hero__button {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  display: block;
-  text-align: center;
-  background-color: $accent-color;
-  color: #ffffff;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
@@ -24,7 +18,15 @@
   padding-bottom: 10px;
   padding-right: 30px;
   border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  background-color: $accent-color;
+  color: #ffffff;
   border: none;
+  cursor: pointer;
   &:focus {
     line-height: 1.6;
     color: #ffffff;
@@ -167,8 +169,6 @@ textarea {
 }
 .modal__container--signature {
   margin-top: 20px;
-  margin-right: 7px;
-  margin-left: 13px;
 }
 .hide-me {
   position: absolute;
