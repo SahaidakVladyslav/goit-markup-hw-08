@@ -1243,6 +1243,7 @@ textarea:hover, textarea:focus {
   .menu-container.is-open {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    position: fixed;
   }
   .browsing__list {
     display: -webkit-box;
@@ -1332,7 +1333,17 @@ textarea:hover, textarea:focus {
     color: #2196f3;
   }
   .menu__container--span {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
     color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 767px) and (min-width: 200px) and (max-width: 410px) {
+  .menu__container--span {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -1510,6 +1521,9 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 399px) and (max-width: 767px) {
+  .cutomers__link {
+    width: 210px;
+  }
   .customers {
     padding: 60px 15px;
   }
@@ -1547,6 +1561,9 @@ textarea:hover, textarea:focus {
 }
 
 @media screen and (min-width: 350px) and (max-width: 399px) {
+  .cutomers__link {
+    width: 210px;
+  }
   .customers__title {
     text-align: center;
     margin-bottom: 30px;
@@ -1887,6 +1904,9 @@ textarea:hover, textarea:focus {
     padding: 60px 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .cutomers__link {
+    width: 226px;
   }
   .customers__title {
     text-align: center;
