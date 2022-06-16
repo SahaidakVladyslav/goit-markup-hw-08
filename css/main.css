@@ -555,6 +555,7 @@ textarea:hover, textarea:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  cursor: pointer;
 }
 
 .hide-me-to {
@@ -2200,6 +2201,9 @@ textarea:hover, textarea:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .portfolio__list--button {
+    margin-top: 80px;
   }
 }
 
